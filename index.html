@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>JS FORM VALIDATION</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <h2>Contact form</h2>
+    <div id="error_message"></div>
+    <form id="myForm" onsubmit="return validate();">
+      <div class="input_field">
+        <input type="text" id="name" required placeholder="name" required />
+      </div>
+      <div class="input_field">
+        <input type="text" id="subject" required placeholder="subject" />
+      </div>
+      <div class="input_field">
+        <input type="tel" id="phone" required placeholder="phone" />
+      </div>
+      <div class="input_field">
+        <input type="text" id="email" required placeholder="email" />
+      </div>
+      <div class="input_field">
+        <textarea placeholder="Message" required id="message"></textarea>
+      </div>
+      <div class="btn">
+        <input type="submit" />
+      </div>
+    </form>
+  </body>
+</html>
